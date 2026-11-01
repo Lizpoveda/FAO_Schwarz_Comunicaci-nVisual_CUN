@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3ece2">
+  <title>FAO Schwarz — El Zen de la Construcción</title>
+  <meta name="description" content="Propuesta gráfica para la portada del sitio web de FAO Schwarz. El Zen de la Construcción: una puerta de entrada mágica, contemporánea y en equilibrio.">
+
+  <meta property="og:title" content="FAO Schwarz — El Zen de la Construcción">
+  <meta property="og:description" content="Una propuesta gráfica para la portada del sitio web de FAO Schwarz. Concepto, sistema visual y composición.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/dragon-crop.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b3328'/%3E%3Cpath d='M32 10 47 32 32 54 17 32Z' fill='%23d8b76a'/%3E%3Cpath d='M32 20 39 32 32 44 25 32Z' fill='%230b3328'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="preload" as="image" href="assets/dragon-cutout.png" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-top">
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="menu-toggle__lines" aria-hidden="true"><span></span><span></span></span>
+        <span class="menu-toggle__text">Menú</span>
+      </button>
+
+      <a class="brand" href="#inicio" aria-label="FAO Schwarz, ir al inicio">
+        <span class="brand__fao">F<span class="brand__dot">·</span>A<span class="brand__dot">·</span>O</span>
+        <span class="brand__name">SCHWARZ</span>
+      </a>
+
+      <div class="header-actions">
+        <a class="header-link" href="#documento">Autora</a>
+        <a class="header-link header-link--accent" href="assets/Planeacion_Propuesta_Grafica_FAO_Schwarz_APA.pdf" download>Descargar PDF</a>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#propuesta">La propuesta</a>
+      <a href="#concepto">Concepto</a>
+      <a href="#sistema">Sistema visual</a>
+      <a href="#composicion">Composición</a>
+      <a href="#documento">Documento</a>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__top">
+      <a class="brand brand--mobile" href="#inicio" aria-label="FAO Schwarz, ir al inicio">
+        <span class="brand__fao">F<span class="brand__dot">·</span>A<span class="brand__dot">·</span>O</span>
+        <span class="brand__name">SCHWARZ</span>
+      </a>
+      <button class="menu-close" id="menu-close" type="button" aria-label="Cerrar menú">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Navegación móvil">
+      <a href="#inicio"><span>00</span>Inicio</a>
+      <a href="#propuesta"><span>01</span>La propuesta</a>
+      <a href="#concepto"><span>02</span>Concepto</a>
+      <a href="#sistema"><span>03</span>Sistema visual</a>
+      <a href="#composicion"><span>04</span>Composición</a>
+      <a href="#documento"><span>05</span>Documento</a>
+    </nav>
+
+    <div class="mobile-menu__bottom">
+      <p>Diseño que se construye.<br>Calma que se colecciona.</p>
+      <div class="mobile-menu__links">
+        <a href="#documento">Elizabeth Cuervo Poveda</a>
+        <a href="assets/Planeacion_Propuesta_Grafica_FAO_Schwarz_APA.pdf" download>Descargar PDF</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-halo" aria-hidden="true"></div>
+
+      <aside class="hero-note hero-note--left" aria-hidden="true">
+        <span>Propuesta gráfica · 2026</span>
+      </aside>
+      <aside class="hero-note hero-note--right" aria-hidden="true">
+        <span>Portada web · FAO Schwarz</span>
+      </aside>
+
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span class="eyebrow__line"></span>
+          Planeación de una propuesta gráfica
+          <span class="eyebrow__line eyebrow__line--reverse"></span>
+        </p>
+
+        <div class="dragon-stage" id="dragon-stage" tabindex="0" role="group" aria-label="Dragón Zen. Pasa el cursor, enfoca o toca la figura para revelar la malla 3D.">
+          <div class="enso" aria-hidden="true">
+            <svg viewBox="0 0 420 420">
+              <defs>
+                <linearGradient id="ensoGold" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#e8ce8a" stop-opacity=".12"/>
+                  <stop offset=".45" stop-color="#d8b76a" stop-opacity=".75"/>
+                  <stop offset="1" stop-color="#b68a3e" stop-opacity=".08"/>
+                </linearGradient>
+              </defs>
+              <circle cx="210" cy="210" r="176" fill="none" stroke="url(#ensoGold)" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="870 235" transform="rotate(-58 210 210)"/>
+              <circle cx="210" cy="210" r="196" fill="none" stroke="#d8b76a" stroke-opacity=".1" stroke-width=".8"/>
+            </svg>
+          </div>
+
+          <div class="dragon-plate" id="dragon-plate">
+            <img class="dragon-img" src="assets/dragon-cutout.png" alt="Dragón low-poly verde esmeralda con cuernos y detalles dorados, sentado en postura de meditación" width="1100" height="1562" fetchpriority="high" draggable="false">
+            <div class="dragon-wireframe" id="dragon-wireframe" aria-hidden="true"></div>
+            <div class="dragon-sheen" aria-hidden="true"></div>
+          </div>
+
+          <p class="stage-hint" aria-hidden="true"><span class="hint-dot"></span> Revela la malla 3D</p>
+        </div>
+
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span>El zen de la</span>
+            <span>construcción<em>.</em></span>
+          </h1>
+          <p class="hero-subtitle">Una propuesta para la portada del sitio web de FAO Schwarz: el punto de encuentro entre la magia clásica de la marca y una nueva faceta contemporánea de calma, creatividad y diseño.</p>
+          <a class="cta" href="#propuesta">
+            <span>Explorar la propuesta</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <p class="hero-meta">Portada web <span>·</span> Sistema visual <span>·</span> Documento de diseño</p>
+        </div>
+
+        <a class="scroll-cue" href="#propuesta" aria-label="Descubrir la propuesta">
+          <span>Descubre más</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="chapter chapter--light proposal" id="propuesta" aria-labelledby="proposal-title">
+      <div class="chapter-inner">
+        <div class="chapter-aside reveal">
+          <p class="chapter-number" aria-hidden="true">01</p>
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow__line"></span>
+            La propuesta
+          </p>
+        </div>
+
+        <div class="chapter-main reveal">
+          <h2 id="proposal-title">Una puerta de entrada <em>mágica.</em></h2>
+          <p class="chapter-lead">La portada es la vitrina principal y la primera interacción de la audiencia digital con la marca.</p>
+          <div class="prose">
+            <p>El objetivo es crear una puerta de entrada mágica e interactiva que logre captar la atención de los usuarios desde el primer instante, ofreciendo una experiencia inmersiva y de alto nivel.</p>
+            <p>La intención es presentar una faceta más moderna e innovadora de FAO Schwarz. Queremos comunicar que, junto a la magia tradicional, la marca también ofrece productos que fomentan la calma, la creatividad y el diseño contemporáneo, manteniendo siempre su característico estatus premium y exclusivo.</p>
+          </div>
+
+          <div class="meta-strip">
+            <div class="meta-item">
+              <span>Pieza</span>
+              <strong>Portada del sitio web</strong>
+            </div>
+            <div class="meta-item">
+              <span>Objetivo</span>
+              <strong>Presentar una nueva faceta</strong>
+            </div>
+            <div class="meta-item">
+              <span>Público</span>
+              <strong>Kidults y familias</strong>
+            </div>
+            <div class="meta-item">
+              <span>Estructura</span>
+              <strong>Retícula de 12 columnas</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--dark concept" id="concepto" aria-labelledby="concept-title">
+      <div class="concept-glow" aria-hidden="true"></div>
+
+      <div class="chapter-inner chapter-inner--split">
+        <figure class="concept-figure reveal">
+          <div class="concept-ring" aria-hidden="true"></div>
+          <img src="assets/dragon-cutout.png" alt="Dragón low-poly en postura de meditación, verde esmeralda con detalles dorados" width="1100" height="1562" loading="lazy" decoding="async">
+          <figcaption>Dragón low-poly · Verde esmeralda y dorado</figcaption>
+        </figure>
+
+        <div class="chapter-main reveal">
+          <p class="chapter-number chapter-number--gold" aria-hidden="true">02</p>
+          <p class="eyebrow eyebrow--gold">
+            <span class="eyebrow__line"></span>
+            Concepto
+          </p>
+          <h2 id="concept-title">El zen de la <em>construcción.</em></h2>
+          <p class="chapter-lead">El dragón meditando en postura de loto representa visualmente el estado de concentración y paz mental que se experimenta al armar un rompecabezas 3D.</p>
+          <p class="concept-quote">Equilibrio, fluidez y tranquilidad.</p>
+
+          <div class="concept-columns">
+            <div>
+              <h3>La imagen</h3>
+              <p>Un dragón de estética low-poly, construido con triángulos y caras planas. Sus cuernos dorados y su postura simétrica convierten la figura en el punto focal de toda la composición.</p>
+            </div>
+            <div>
+              <h3>El público</h3>
+              <p>La propuesta está dirigida a <em>kidults</em> —adultos jóvenes y coleccionistas con aprecio por el diseño— y a padres de familia que buscan desconectarse de la rutina digital.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--light system" id="sistema" aria-labelledby="system-title">
+      <div class="chapter-inner">
+        <div class="chapter-head reveal">
+          <p class="chapter-number" aria-hidden="true">03</p>
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow__line"></span>
+            Sistema visual
+          </p>
+          <h2 id="system-title">Una identidad <em>en equilibrio.</em></h2>
+          <p class="chapter-head-copy">Color, tipografía, retícula y elementos gráficos se articulan para que la portada sea coherente con la elegancia histórica de FAO Schwarz y, al mismo tiempo, se sienta fresca y contemporánea.</p>
+        </div>
+
+        <div class="system-grid">
+          <article class="system-card reveal">
+            <span class="system-index" aria-hidden="true">01</span>
+            <h3>Color</h3>
+            <p>El verde esmeralda mate y el dorado son los protagonistas. El rojo tradicional pasa a segundo plano para dar paso a una estética más serena, sobre un fondo arena muy sutil.</p>
+            <div class="swatches">
+              <span class="swatch"><i style="--swatch:#0b3328"></i>Esmeralda</span>
+              <span class="swatch"><i style="--swatch:#c8a45c"></i>Dorado</span>
+              <span class="swatch"><i style="--swatch:#f3ece2"></i>Arena</span>
+            </div>
+          </article>
+
+          <article class="system-card reveal">
+            <span class="system-index" aria-hidden="true">02</span>
+            <h3>Tipografía</h3>
+            <p>La serif clásica se conserva en el logotipo. Para navegación, textos y llamados a la acción se incorpora una sans-serif geométrica de líneas rectas.</p>
+            <div class="type-specimen">
+              <span class="type-serif">Aa</span>
+              <span class="type-sans">Aa</span>
+              <span class="type-labels">Serif · logotipo<br>Sans · interfaz</span>
+            </div>
+          </article>
+
+          <article class="system-card reveal">
+            <span class="system-index" aria-hidden="true">03</span>
+            <h3>Retícula</h3>
+            <p>Una retícula responsiva de 12 columnas organiza los elementos con claridad y precisión. Es la estructura ideal para una composición simétrica y editorial.</p>
+            <div class="grid-demo" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </article>
+
+          <article class="system-card reveal">
+            <span class="system-index" aria-hidden="true">04</span>
+            <h3>Elementos gráficos</h3>
+            <p>El render 3D del dragón es el centro de la composición. Las mallas doradas —los <em>wireframes</em>— aparecen al pasar el cursor y aportan dinamismo e interactividad.</p>
+            <div class="wire-demo" aria-hidden="true">
+              <svg viewBox="0 0 120 80">
+                <path d="M8 62 30 18 58 40 82 12 112 54 88 72 54 60 28 74Z"/>
+                <path d="M30 18 54 60M58 40 88 72M82 12 54 60M8 62 58 40M112 54 28 74M30 18 88 72M82 12 30 18M112 54 54 60"/>
+              </svg>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--dark composition" id="composicion" aria-labelledby="composition-title">
+      <div class="composition-glow" aria-hidden="true"></div>
+
+      <div class="chapter-inner chapter-inner--split">
+        <div class="composition-sticky reveal">
+          <p class="chapter-number chapter-number--gold" aria-hidden="true">04</p>
+          <p class="eyebrow eyebrow--gold">
+            <span class="eyebrow__line"></span>
+            Composición
+          </p>
+          <h2 id="composition-title">Un recorrido <em>central.</em></h2>
+          <p class="chapter-lead">La mirada entra por el logotipo, desciende hacia el rostro del dragón y termina en el llamado a la acción. Todo ocurre sobre un eje simétrico.</p>
+
+          <div class="composition-diagram" aria-hidden="true">
+            <svg viewBox="0 0 300 300">
+              <circle cx="150" cy="150" r="118" fill="none" stroke="rgba(200,164,92,.2)" stroke-width=".8"/>
+              <circle cx="150" cy="150" r="88" fill="none" stroke="rgba(200,164,92,.32)" stroke-width=".8" stroke-dasharray="2 5"/>
+              <circle cx="150" cy="150" r="56" fill="none" stroke="rgba(200,164,92,.45)" stroke-width=".8"/>
+              <path d="M150 10v280M10 150h280" stroke="rgba(200,164,92,.18)" stroke-width=".7" stroke-dasharray="3 6"/>
+              <circle cx="150" cy="150" r="7" fill="#e4c983"/>
+              <circle cx="150" cy="150" r="15" fill="none" stroke="rgba(228,201,131,.5)" stroke-width=".8"/>
+              <text x="150" y="24" text-anchor="middle" fill="rgba(248,243,235,.5)" font-size="7" letter-spacing="2">LOGOTIPO</text>
+              <text x="150" y="176" text-anchor="middle" fill="rgba(248,243,235,.5)" font-size="7" letter-spacing="2">FOCO</text>
+              <text x="150" y="290" text-anchor="middle" fill="rgba(248,243,235,.5)" font-size="7" letter-spacing="2">ACCIÓN</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="composition-list">
+          <article class="composition-item reveal">
+            <span aria-hidden="true">01</span>
+            <h3>Recorrido visual</h3>
+            <p>La composición fluye a través de un eje central simétrico. El logotipo ocupa la parte superior y la mirada desciende de forma natural hacia el rostro del dragón, continúa por la estructura del cuerpo y finaliza en el botón principal.</p>
+          </article>
+          <article class="composition-item reveal">
+            <span aria-hidden="true">02</span>
+            <h3>Contraste y unidad</h3>
+            <p>La figura verde y dorada se destaca contra un fondo claro y libre de texturas. El mismo tono dorado de los cuernos se aplica en botones, enlaces y acentos para asegurar la coherencia gráfica.</p>
+          </article>
+          <article class="composition-item reveal">
+            <span aria-hidden="true">03</span>
+            <h3>Equilibrio visual</h3>
+            <p>El diseño es estrictamente simétrico. La postura de meditación transmite estabilidad y paz; la diagramación refleja esa misma energía con elementos centrados y un uso generoso del espacio negativo.</p>
+          </article>
+          <article class="composition-item reveal">
+            <span aria-hidden="true">04</span>
+            <h3>Centro de impacto</h3>
+            <p>El punto focal indiscutible es el rostro geométrico del dragón, acentuado por sus cuernos dorados. Su posición central y el contraste entre verdes y dorados captan la atención de manera inmediata.</p>
+          </article>
+          <article class="composition-item reveal">
+            <span aria-hidden="true">05</span>
+            <h3>Leyes de la Gestalt</h3>
+            <p><strong>Simetría:</strong> una figura perfectamente simétrica en el centro refuerza el orden y la calma. <strong>Cierre:</strong> aunque el dragón está construido por triángulos y caras fragmentadas, el cerebro integra las geometrías y percibe un personaje orgánico y una postura fluida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--light document" id="documento" aria-labelledby="document-title">
+      <div class="chapter-inner chapter-inner--split">
+        <div class="document-copy reveal">
+          <p class="chapter-number" aria-hidden="true">05</p>
+          <p class="eyebrow eyebrow--dark">
+            <span class="eyebrow__line"></span>
+            Documento
+          </p>
+          <h2 id="document-title">La propuesta <em>completa.</em></h2>
+          <p class="chapter-lead">“Planeación de una propuesta gráfica para FAO Schwarz” reúne el análisis, el concepto y las decisiones de diseño que dan forma a esta portada.</p>
+
+          <div class="document-meta">
+            <div>
+              <span>Autora</span>
+              <strong>Elizabeth Cuervo Poveda</strong>
+            </div>
+            <div>
+              <span>Institución</span>
+              <strong>Corporación Unificada Nacional de Educación Superior (CUN)</strong>
+            </div>
+            <div>
+              <span>Ciudad</span>
+              <strong>Bogotá D.C., Colombia</strong>
+            </div>
+            <div>
+              <span>Fecha</span>
+              <strong>1 de noviembre de 2026</strong>
+            </div>
+          </div>
+
+          <a class="cta" href="assets/Planeacion_Propuesta_Grafica_FAO_Schwarz_APA.pdf" download>
+            <span>Descargar el documento</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v12m0 0-5-5m5 5 5-5M5 20h14"/></svg>
+          </a>
+        </div>
+
+        <div class="document-preview reveal">
+          <div class="paper-stack" aria-hidden="true">
+            <div class="paper paper--back"></div>
+            <div class="paper paper--middle"></div>
+            <div class="paper paper--front">
+              <span class="paper-kicker">Propuesta gráfica · 2026</span>
+              <span class="paper-brand">F·A·O <small>SCHWARZ</small></span>
+              <span class="paper-title">El zen de la<br>construcción.</span>
+              <span class="paper-line"></span>
+              <span class="paper-author">Elizabeth Cuervo Poveda</span>
+              <span class="paper-foot">CUN · Bogotá D.C.</span>
+            </div>
+          </div>
+          <a class="text-link text-link--dark" href="assets/Planeacion_Propuesta_Grafica_FAO_Schwarz_APA.pdf" target="_blank" rel="noopener">Abrir el documento en el navegador <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="references reveal">
+        <p class="eyebrow eyebrow--dark">Referencias</p>
+        <p>Adobe. (2016). <em>El papercraft o el arte de construir con papel.</em> <a href="https://share.google/za91WUU5LS9TaMVfd" target="_blank" rel="noopener">share.google/za91WUU5LS9TaMVfd</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand brand--footer" href="#inicio" aria-label="FAO Schwarz, ir al inicio">
+          <span class="brand__fao">F<span class="brand__dot">·</span>A<span class="brand__dot">·</span>O</span>
+          <span class="brand__name">SCHWARZ</span>
+        </a>
+        <p class="footer-tagline">Diseño que se construye.<br>Calma que se colecciona.</p>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-title">Índice</p>
+        <a href="#propuesta">La propuesta</a>
+        <a href="#concepto">Concepto</a>
+        <a href="#sistema">Sistema visual</a>
+        <a href="#composicion">Composición</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-title">Documento</p>
+        <a href="assets/Planeacion_Propuesta_Grafica_FAO_Schwarz_APA.pdf" download>Descargar PDF</a>
+        <a href="assets/Planeacion_Propuesta_Grafica_FAO_Schwarz_APA.pdf" target="_blank" rel="noopener">Abrir en el navegador</a>
+        <a href="#documento">Referencias</a>
+        <a href="#inicio">Volver al inicio</a>
+      </div>
+
+      <div class="footer-column footer-column--contact">
+        <p class="footer-title">Autora</p>
+        <p class="footer-name">Elizabeth Cuervo Poveda</p>
+        <p>Corporación Unificada Nacional<br>de Educación Superior (CUN)<br>Bogotá D.C., Colombia</p>
+        <div class="footer-social">
+          <a href="#documento">Propuesta académica</a>
+          <a href="#inicio">2026</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 FAO Schwarz · Propuesta gráfica</span>
+      <span>El zen de la construcción</span>
+      <div class="footer-social footer-social--legal">
+        <a href="#documento">Créditos</a>
+        <a href="#documento">Referencias</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
